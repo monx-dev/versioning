@@ -15,12 +15,11 @@
     "build": "rollup -c",
     "postbuild": "copyfiles -u 1 types/*.d.ts dist",
     "release": "semantic-release",
-    "test": "yarn build",
-    "Release": "node bin/commit.js"
+    "test": "yarn build"
   },
   "bin": {
-    "commit": "bin/commit.js",
-    "release": "bin/release.js"
+    "versioning-commit": "bin/commit.js",
+    "versioning-release": "bin/release.js"
   },
   "dependencies": {
     "@commitlint/cli": "^8.3.5",
